@@ -8,7 +8,7 @@ abstract class Bank {
         System.out.println("Welcome to the Bank!");
     }
 }
-
+//adede new ccommrnt here
 // Step 2: Create a subclass 'SBI' that extends 'Bank'
 /*The SBI class inherits from Bank and must provide an implementation for the loanInterestRate() method. */
 class SBI extends Bank {
