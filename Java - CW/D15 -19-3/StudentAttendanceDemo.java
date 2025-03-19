@@ -27,4 +27,6 @@ Provides fast retrieval of student names.*/
 
 
 /*Today's Attendance: [Alice, Bob, Charlie]
-Is Bob present? true */
+Is Bob present? true */ 
+
+// updated code
