@@ -1,10 +1,13 @@
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class TreeMapDemo {
+public class HashTableDemo {
 
 	public static void main(String[] args) {
-		Map<Integer, String> m = new TreeMap<>();
+		Map<Integer, String> m = new Hashtable<>();
 		//<Key, Value>
 		m.put(5, "Rohan");
 		m.put(101, "Aditya");
@@ -16,9 +19,7 @@ public class TreeMapDemo {
 		m.put(8, "");
 		m.put(9, "");
 		System.out.println(m);
-		//System.out.println(m.get(5));//
-		//m.remove(3);
-		//System.out.println(m);
+		
 		
 		
 		
