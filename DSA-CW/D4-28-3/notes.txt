@@ -1,0 +1,130 @@
+algorithm analysis :---
+
+algorithm           -- priory analysis
+flowchart 
+
+design ----- algorithm
+programming language -- independent
+hardware, os                    -- h/w
+analysis                       -- time, space
+
+
+programming: posterior analysis
+
+implemantation --- programm
+programmer --- dependent on programming language
+
+h/w and os --- dependent on h/w & os
+
+testing  --- time
+
+
+
+Q. priory analysis and posterior analysis
+-->
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Feature            |     	Priori Analysis (A Priori)	             |              Posterior Analysis (A Posteriori)
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Definition	             Theoretical analysis before execution	                 Experimental analysis after execution
+When Performed?	              Before implementation	                                  After implementation
+Focus	                 Asymptotic complexity (Big-O, Big-Theta)	                             Actual execution time and memory usage
+System Dependent?	                   ❌ No	                                                        ✅ Yes
+Example	              Analyzing Bubble Sort complexity before coding	           Measuring execution time of Bubble Sort in real conditions
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Asymptotic Notation in Algorithm Analysis ::
+Asymptotic notation is used to describe the efficiency of an algorithm in terms of time and space complexity as the input size (n) grows larger. It helps in analyzing an algorithm's performance independent of hardware and implementation details.
+
+🔹 Types of Asymptotic Notation
+1️⃣ Big-O Notation (O) → Upper Bound (Worst Case)
+Represents the worst-case time complexity.
+
+Defines an upper limit on the algorithm's growth rate.
+
+Ensures that the algorithm never takes longer than this bound.
+
+✅ Example:
+Bubble Sort worst-case complexity: O(n²)
+Binary Search worst-case complexity: O(log n)
+
+📌 Graph Representation:
+Big-O is an upper bound, meaning the algorithm at most runs in this time.
+
+2️⃣ Omega Notation (Ω) → Lower Bound (Best Case)
+Represents the best-case time complexity.
+
+Defines a lower bound on the algorithm's growth rate.
+
+Ensures that the algorithm at least takes this time.
+
+✅ Example:
+Bubble Sort best-case complexity (already sorted): Ω(n)
+Binary Search best-case complexity: Ω(1)
+
+📌 Graph Representation:
+Ω is a lower bound, meaning the algorithm at least runs in this time.
+
+3️⃣ Theta Notation (Θ) → Tight Bound (Average Case)
+Represents the average-case time complexity.
+
+Provides both an upper and lower bound.
+
+Ensures that the algorithm always runs within this bound.
+
+✅ Example:
+Merge Sort complexity: Θ(n log n) (same in best, worst, and average cases)
+Linear Search average-case complexity: Θ(n)
+
+📌 Graph Representation:
+Θ is a tight bound, meaning the algorithm always runs in this time range.
+
+🔹 Common Asymptotic Complexities
+Notation	Complexity	Example
+O(1)	Constant Time	Accessing an array element
+O(log n)	Logarithmic Time	Binary Search
+O(n)	Linear Time	Linear Search
+O(n log n)	Log-Linear Time	Merge Sort, QuickSort (average case)
+O(n²)	Quadratic Time	Bubble Sort, Selection Sort
+O(2ⁿ)	Exponential Time	Fibonacci (Naive Recursion)
+O(n!)	Factorial Time	Traveling Salesman Problem
+🔹 Example: Sorting Algorithms Comparison
+
+Algorithm	  Best Case	        Worst Case	             Average Case
+Bubble Sort	     Ω(n)	              O(n²)	                Θ(n²)
+Merge Sort	   Ω(n log n)	    O(n log n)	              Θ(n log n)
+Quick Sort	   Ω(n log n)	       O(n²)	                Θ(n log n)
+Binary Search	Ω(1)	          O(log n)	                Θ(log n)
+
+
+
+🔹 Summary
+Big-O (O): Worst-case performance (upper bound).
+
+Omega (Ω): Best-case performance (lower bound).
+
+Theta (Θ): Average-case performance (tight bound).
+
+The lower the complexity, the better the algorithm scales.
+
+
+
+
+
+What is Backtracking?
+Backtracking is a problem-solving technique that involves recursively exploring all possible solutions and undoing (backtracking) choices when a dead-end is reached. 
+
+
+
+Password Cracker (Backtracking) 🔑
+Soch, tere paas ek 4-digit PIN hai, but tune bhool gaya hai.
+Tu ek software likhta hai jo brute force se PIN guess karega. Backtracking ka use karke, agar ek number galat ho toh wapas jaake naya try karega.
+
+Approach (Backtracking)
+Har digit (0-9) ko ek-ek karke try karenge.
+
+Agar digit sahi lagti hai, next position ke liye move karenge.
+
+Agar kahin galti hui, backtrack karke previous digit change karenge.
+
+Jaise hi correct PIN milta hai, process stop ho jata hai.
