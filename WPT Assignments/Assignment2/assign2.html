@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Paragraph Style</title>
+    <style>
+        #myParagraph {
+            font-size: 16px;
+            color: black;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="myParagraph">
+        Technology continues to evolve rapidly, influencing every aspect of modern life. From communication and education to healthcare and entertainment, innovations drive progress and efficiency. Artificial intelligence, automation, and data science are shaping industries and redefining the future. Embracing these advancements opens new opportunities, encourages growth, and transforms the way we live.
+    </p>
+
+    <div class="button-container">
+        <button type="submit" onclick="changeStyle()">Submit</button>
+    </div>
+
+    <script>
+        function changeStyle() {
+            const para = document.getElementById("myParagraph");
+            para.style.color = "red";
+            para.style.fontSize = "20px";
+            para.style.fontWeight = "bold";
+            para.style.fontFamily = "Arial, sans-serif";
+        }
+    </script>
+
+</body>
+</html>

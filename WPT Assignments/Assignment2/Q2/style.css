@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2Vic2l0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  background: linear-gradient(145deg, #ffffffdd, #f0f0f0ee);
+  padding: 3rem 4rem;
+  border: 2px solid #d1d1d1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.label {
+  margin: 4px;
+  padding: 4px;
+  display: inline-flex;
+  width: 13rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  width: 100%;
+  color: #222;
+}
+
+.type {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.type:focus {
+  border-color: #7a5ef8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(122, 94, 248, 0.5);
+}
+
+.submition {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sub {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sub:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #6246ea, #45d19e);
+}
+
+#output {
+  display: none;
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 18px;
+  color: #444;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Times New Roman", Times, serif;
+}

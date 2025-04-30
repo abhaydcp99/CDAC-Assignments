@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - CDAC Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    
+    <form action="#" method="post">
+      
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="contact-reason">Reason for Contact:</label>
+      <select id="contact-reason" name="reason">
+        <option value="query">Query</option>
+        <option value="feedback">Feedback</option>
+        <option value="support">Support</option>
+      </select>
+
+      <label>Preferred Contact Time:</label>
+      <label><input type="radio" name="time" value="morning"> Morning</label>
+      <label><input type="radio" name="time" value="afternoon"> Afternoon</label>
+      <label><input type="radio" name="time" value="evening"> Evening</label>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <label for="location">Your Location :</label>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160974722!2d72.74110176007093!3d19.08219783903959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63a6baed9b3%3A0x59343f7c142893b!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1681538059486!5m2!1sen!2sin" 
+        width="100%" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

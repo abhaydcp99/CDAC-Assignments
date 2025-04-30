@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body 
+        {
+            background: url('https://rajaneditz.com/wp-content/uploads/2021/10/PicsArt_10-16-10.18.08_compress73.jp') no-repeat center center fixed;
+            background-size: cover;
+            
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+            margin: 0;
+            padding: 0;
+        }
+        .title-text {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 35px;
+    
+    
+            background-image: linear-gradient(to right, #405DE6, #5851D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F5604D, #F77737, #FCAF45);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 10px;
+        }
+        #login-form-container {
+            width: 450px;
+            height: 500px;
+            background-color: white;
+            text-align: center;
+            margin: 100px auto;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        input {
+            width: 60%;
+            margin-bottom: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        #login-btn {
+            width: 30%;
+            background: #EF5350;
+            border: 0;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        #login-btn:hover {
+            background: white;
+            border-style: solid;
+            color: #EF5350;
+            border-width: 2px;
+            border-color: #EF5350;
+        }
+        .form-field {
+            border-top-width: 0;
+            border-left-width: 0;
+            border-right-width: 0;
+            outline: 0;
+        }
+        .logo-img {
+            width: 100px;
+            height: auto;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-form-container">
+        <!-- Logo -->
+        <img src="sfCapture.JPG" alt="AK-Special Force Logo" class="logo-img">
+        
+        <!-- Title -->
+        <div class="title-text">AK-Special Force</div>
+        
+        <!-- Form -->
+        <form>
+            <div><input type="text" placeholder="Enter user name" class="form-field"></div>
+            <div><input type="password" placeholder="Enter password" class="form-field"></div>
+            <div><button id="login-btn">Login</button></div>
+        </form>
+        <p>Need Assignment? <a href="#">Join AK-SF</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background: linear-gradient(#405DE6,#5851D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F5604D, #F77737, #FCAF45) ;
+        }
+        .instagram-like-text {
+            
+            font-family: 'Pacifico', cursive;
+            font-size: 40px; 
+            background-image: linear-gradient(
+                to right, 
+                #405DE6, #5851D8, #833AB4, #C13584, 
+                #E1306C, #FD1D1D, #F5604D, #F77737, #FCAF45
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            }
+
+       
+    #login-form-container {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    text-align: center;
+    margin: 160px auto;
+    border-radius: 20px;
+        }
+        input{
+    width: 60%;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+#login-btn{
+    width: 30%;
+    background: #EF5350;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#login-btn:hover{
+    background: white;
+    border-style: solid;
+    color:#EF5350;
+    border-width: 2px;
+    border-color: #EF5350;
+}
+h2{
+    padding-top: 35px;
+}
+.form-field{
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    outline: 0;
+}
+    </style>
+</head>
+<body>
+    <div id="login-form-container">
+        
+        <form>
+            
+            <div class="instagram-like-text">Instagram</div>
+            
+            <div><input type="text" placeholder="Enter user name"></div>
+            <div><input type="password" placeholder="Enter password"></div>
+            
+            <div><button>Login</button></div>
+        </form>
+        <p>Need Account? <a href="#">Sign Up</a></p>
+    </div>
+</body>
+</html>

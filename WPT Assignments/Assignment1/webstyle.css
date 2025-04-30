@@ -1,0 +1,52 @@
+
+
+
+
+.green-button{
+    border-radius: 20px;
+    color: #4caf50;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.5s;
+    background: white;
+}
+.green-button:hover{
+    color: white;
+    background: blue;
+}
+#description-text{
+    text-align: justify;
+}
+.green-button{
+    border-color: #4caf50;
+    border-width: 1PX;
+    border-style: solid;
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: #4caf50;
+    font-size:  18px;
+    font-weight: bold;
+    transition: background 0.5s;
+    background: white;
+}
+
+#box-contauner{
+    width: 100%;
+    height: 450px;
+    background: blue;
+}
+#box1-1{
+    width:33.33%;
+    height: inherit;       
+    background: orange;
+}
+#box-2{
+    width: 33.33%;
+    height: 300px;
+    background: lightgreen;
+}
+#box-3{
+    width : 33.33;
+    height:inherit;
+    background: yellow;
+}
